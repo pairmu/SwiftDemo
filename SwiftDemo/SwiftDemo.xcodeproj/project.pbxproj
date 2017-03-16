@@ -15,6 +15,7 @@
 		C45F5E3F1E7A37FC006283A7 /* SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E3E1E7A37FC006283A7 /* SwiftDemoTests.swift */; };
 		C45F5E4A1E7A37FC006283A7 /* SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E491E7A37FC006283A7 /* SwiftDemoUITests.swift */; };
 		C45F5E581E7A3878006283A7 /* DemoGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */; };
+		C45F5E5A1E7A3DE5006283A7 /* DemoReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C45F5E491E7A37FC006283A7 /* SwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoUITests.swift; sourceTree = "<group>"; };
 		C45F5E4B1E7A37FC006283A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoGradientLayer.swift; sourceTree = "<group>"; };
+		C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoReplicatorLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				C45F5E291E7A37FC006283A7 /* AppDelegate.swift */,
 				C45F5E2B1E7A37FC006283A7 /* ViewController.swift */,
 				C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */,
+				C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */,
 				C45F5E2D1E7A37FC006283A7 /* Main.storyboard */,
 				C45F5E301E7A37FC006283A7 /* Assets.xcassets */,
 				C45F5E321E7A37FC006283A7 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				C45F5E2C1E7A37FC006283A7 /* ViewController.swift in Sources */,
 				C45F5E581E7A3878006283A7 /* DemoGradientLayer.swift in Sources */,
 				C45F5E2A1E7A37FC006283A7 /* AppDelegate.swift in Sources */,
+				C45F5E5A1E7A3DE5006283A7 /* DemoReplicatorLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chengpeng.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -433,6 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = chengpeng.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
