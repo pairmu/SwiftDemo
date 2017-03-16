@@ -14,6 +14,7 @@
 		C45F5E341E7A37FC006283A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45F5E321E7A37FC006283A7 /* LaunchScreen.storyboard */; };
 		C45F5E3F1E7A37FC006283A7 /* SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E3E1E7A37FC006283A7 /* SwiftDemoTests.swift */; };
 		C45F5E4A1E7A37FC006283A7 /* SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E491E7A37FC006283A7 /* SwiftDemoUITests.swift */; };
+		C45F5E581E7A3878006283A7 /* DemoGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C45F5E451E7A37FC006283A7 /* SwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45F5E491E7A37FC006283A7 /* SwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoUITests.swift; sourceTree = "<group>"; };
 		C45F5E4B1E7A37FC006283A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoGradientLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				C45F5E291E7A37FC006283A7 /* AppDelegate.swift */,
 				C45F5E2B1E7A37FC006283A7 /* ViewController.swift */,
+				C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */,
 				C45F5E2D1E7A37FC006283A7 /* Main.storyboard */,
 				C45F5E301E7A37FC006283A7 /* Assets.xcassets */,
 				C45F5E321E7A37FC006283A7 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45F5E2C1E7A37FC006283A7 /* ViewController.swift in Sources */,
+				C45F5E581E7A3878006283A7 /* DemoGradientLayer.swift in Sources */,
 				C45F5E2A1E7A37FC006283A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
