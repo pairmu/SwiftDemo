@@ -18,6 +18,7 @@
 		C45F5E5A1E7A3DE5006283A7 /* DemoReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */; };
 		C45F5E5E1E7A43EE006283A7 /* DemoReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E5D1E7A43EE006283A7 /* DemoReflectionView.swift */; };
 		C45F5EAA1E7AADFA006283A7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C45F5EA91E7AADFA006283A7 /* 1.png */; };
+		C45F5EEE1E7AD145006283A7 /* DemoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5EED1E7AD145006283A7 /* DemoScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoReplicatorLayer.swift; sourceTree = "<group>"; };
 		C45F5E5D1E7A43EE006283A7 /* DemoReflectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoReflectionView.swift; sourceTree = "<group>"; };
 		C45F5EA91E7AADFA006283A7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		C45F5EED1E7AD145006283A7 /* DemoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				C45F5EA91E7AADFA006283A7 /* 1.png */,
 				C45F5E291E7A37FC006283A7 /* AppDelegate.swift */,
 				C45F5E2B1E7A37FC006283A7 /* ViewController.swift */,
+				C45F5EED1E7AD145006283A7 /* DemoScrollView.swift */,
 				C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */,
 				C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */,
 				C45F5E5D1E7A43EE006283A7 /* DemoReflectionView.swift */,
@@ -274,6 +277,7 @@
 			files = (
 				C45F5E5E1E7A43EE006283A7 /* DemoReflectionView.swift in Sources */,
 				C45F5E2C1E7A37FC006283A7 /* ViewController.swift in Sources */,
+				C45F5EEE1E7AD145006283A7 /* DemoScrollView.swift in Sources */,
 				C45F5E581E7A3878006283A7 /* DemoGradientLayer.swift in Sources */,
 				C45F5E2A1E7A37FC006283A7 /* AppDelegate.swift in Sources */,
 				C45F5E5A1E7A3DE5006283A7 /* DemoReplicatorLayer.swift in Sources */,

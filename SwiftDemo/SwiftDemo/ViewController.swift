@@ -28,10 +28,16 @@ class ViewController: UIViewController {
 //        replicatorLayer.showDemoReplicatorLayer(parentView: self.view)
         
         // DemoReflectionView
-        let reflectionView = DemoReflectionView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
-        reflectionView.image = UIImage.init(named: "1")
-        reflectionView.backgroundColor = UIColor.yellow
-        self.view.addSubview(reflectionView)
+//        let reflectionView = DemoReflectionView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
+//        reflectionView.image = UIImage.init(named: "1")
+//        reflectionView.backgroundColor = UIColor.yellow
+//        self.view.addSubview(reflectionView)
+        
+        // demoScrollView
+        let scrollView = DemoScrollView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
+        scrollView.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.blue
+        self.view.addSubview(scrollView)
     }
 
     override func didReceiveMemoryWarning() {
