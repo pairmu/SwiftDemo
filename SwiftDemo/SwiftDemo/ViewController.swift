@@ -16,16 +16,22 @@ class ViewController: UIViewController {
         //
         self.view.backgroundColor = UIColor.lightGray
         
-        let view = UIView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
-        self.view.addSubview(view)
+//        let view = UIView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
+//        self.view.addSubview(view)
         
         // gradientLayer
 //        let gradientLayer = DemoGradientLayer()
 //        gradientLayer.showDemoForParentView(parentView: view)
         
         // replicatorLayer
-        let replicatorLayer = DemoReplicatorLayer()
-        replicatorLayer.showDemoReplicatorLayer(parentView: self.view)
+//        let replicatorLayer = DemoReplicatorLayer()
+//        replicatorLayer.showDemoReplicatorLayer(parentView: self.view)
+        
+        // DemoReflectionView
+        let reflectionView = DemoReflectionView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
+        reflectionView.image = UIImage.init(named: "1")
+        reflectionView.backgroundColor = UIColor.yellow
+        self.view.addSubview(reflectionView)
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,6 +16,8 @@
 		C45F5E4A1E7A37FC006283A7 /* SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E491E7A37FC006283A7 /* SwiftDemoUITests.swift */; };
 		C45F5E581E7A3878006283A7 /* DemoGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */; };
 		C45F5E5A1E7A3DE5006283A7 /* DemoReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */; };
+		C45F5E5E1E7A43EE006283A7 /* DemoReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5E5D1E7A43EE006283A7 /* DemoReflectionView.swift */; };
+		C45F5EAA1E7AADFA006283A7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = C45F5EA91E7AADFA006283A7 /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		C45F5E4B1E7A37FC006283A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoGradientLayer.swift; sourceTree = "<group>"; };
 		C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoReplicatorLayer.swift; sourceTree = "<group>"; };
+		C45F5E5D1E7A43EE006283A7 /* DemoReflectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoReflectionView.swift; sourceTree = "<group>"; };
+		C45F5EA91E7AADFA006283A7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,12 @@
 		C45F5E281E7A37FC006283A7 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C45F5EA91E7AADFA006283A7 /* 1.png */,
 				C45F5E291E7A37FC006283A7 /* AppDelegate.swift */,
 				C45F5E2B1E7A37FC006283A7 /* ViewController.swift */,
 				C45F5E571E7A3878006283A7 /* DemoGradientLayer.swift */,
 				C45F5E591E7A3DE5006283A7 /* DemoReplicatorLayer.swift */,
+				C45F5E5D1E7A43EE006283A7 /* DemoReflectionView.swift */,
 				C45F5E2D1E7A37FC006283A7 /* Main.storyboard */,
 				C45F5E301E7A37FC006283A7 /* Assets.xcassets */,
 				C45F5E321E7A37FC006283A7 /* LaunchScreen.storyboard */,
@@ -239,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45F5E341E7A37FC006283A7 /* LaunchScreen.storyboard in Resources */,
+				C45F5EAA1E7AADFA006283A7 /* 1.png in Resources */,
 				C45F5E311E7A37FC006283A7 /* Assets.xcassets in Resources */,
 				C45F5E2F1E7A37FC006283A7 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45F5E5E1E7A43EE006283A7 /* DemoReflectionView.swift in Sources */,
 				C45F5E2C1E7A37FC006283A7 /* ViewController.swift in Sources */,
 				C45F5E581E7A3878006283A7 /* DemoGradientLayer.swift in Sources */,
 				C45F5E2A1E7A37FC006283A7 /* AppDelegate.swift in Sources */,
