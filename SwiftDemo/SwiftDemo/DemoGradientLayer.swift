@@ -18,7 +18,7 @@ class DemoGradientLayer: NSObject {
         
         gradientLayer.colors = [
             UIColor.red.cgColor,
-            UIColor.blue.cgColor, 
+            UIColor.blue.cgColor,
         ]
         
         // location
