@@ -1,14 +1,14 @@
 //
-//  SwiftDemoUITests.swift
-//  SwiftDemoUITests
+//  SwiftDemoExampleUITests.swift
+//  SwiftDemoExampleUITests
 //
-//  Created by Mistletoe on 2017/3/16.
+//  Created by Mistletoe on 2017/3/17.
 //  Copyright © 2017年 Mistletoe. All rights reserved.
 //
 
 import XCTest
 
-class SwiftDemoUITests: XCTestCase {
+class SwiftDemoExampleUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
