@@ -8,20 +8,84 @@
 
 import UIKit
 
+class LayerDelegate: NSObject, CALayerDelegate {
+    func action(for layer: CALayer, forKey event: String) -> CAAction? {
+        
+        guard event == "moveRight" else {
+            return nil
+        }
+        
+        let animation = CABasicAnimation()
+        animation.keyPath = "backgroundColor"
+        animation.valueFunction = CAValueFunction(name: kCAValueFunctionTranslateX)
+        animation.fromValue = UIColor.red
+        animation.toValue = UIColor.blue
+        animation.duration = 5
+        
+        return animation
+    }
+}
+
+class DemoView: UIView {
+    let delegate = LayerDelegate()
+    
+    lazy var sublayer: CALayer = {
+        let layer = CALayer()
+        layer.delegate = self.delegate
+        return layer
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func action(for layer: CALayer, forKey event: String) -> CAAction? {
+        return sublayer.action(forKey: "backgroundColor")
+    }
+}
+
 class ViewController: UIViewController, CALayerDelegate {
     var scrollView = UIScrollView()
     let scale = UIScreen.main.scale
+    var change = true
+    let demoLayer = CALayer()
+
+    override func loadView() {
+        self.view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
+        self.view.backgroundColor = UIColor.lightGray
+    }
+    
+    let colorLayer = CALayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         #if true
+            colorLayer.frame = CGRect(x: 100, y: 100, width: 200, height: 200)
+            colorLayer.backgroundColor = UIColor.yellow.cgColor
+            self.view.layer.backgroundColor = UIColor.yellow.cgColor
+            
+            let transition = CATransition()
+            transition.type = kCATransitionPush
+            transition.subtype = kCATransitionFromLeft
+            self.view.layer.actions = ["backgroundColor": transition]
+//            colorLayer.actions = ["backgroundColor": transition]
+//            self.view.layer.addSublayer(colorLayer)
+            
+        #else
+            demoView.frame = CGRect(x: 100, y: 100, width: 200, height: 200)
+            demoView.backgroundColor = UIColor.red
+            self.view.addSubview(demoView)
+            
             // palyer
             let string = Bundle.main.path(forResource: "demo", ofType: "mov")
             DemoAVPlayer.play(path: string!, superLayer: self.view.layer)
             
-        #else
             // scrollView
             scrollView.frame = self.view.bounds
             scrollView.backgroundColor = UIColor.red
@@ -37,6 +101,31 @@ class ViewController: UIViewController, CALayerDelegate {
             scrollView.contentSize = tileLayer.frame.size
             tileLayer.setNeedsDisplay()
         #endif
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+
+        if self.change {
+            self.colorLayer.backgroundColor = UIColor.blue.cgColor
+            self.view.layer.backgroundColor = UIColor.blue.cgColor
+        }
+        else {
+            self.colorLayer.backgroundColor = UIColor.red.cgColor
+            self.view.layer.backgroundColor = UIColor.red.cgColor
+        }
+//        if self.change {
+//            CATransaction.begin()
+//            CATransaction.setAnimationDuration(5.0)
+//            self.view.layer.backgroundColor = UIColor.yellow.cgColor
+//            CATransaction.commit()
+//        }
+//        else {
+//            UIView.animate(withDuration: 5, animations: {
+//                self.view.backgroundColor = UIColor.blue
+//            })
+//        }
+        self.change = !self.change
     }
     
     func draw(_ layer: CALayer, in ctx: CGContext) {
