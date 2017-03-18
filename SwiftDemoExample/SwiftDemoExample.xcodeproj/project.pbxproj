@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4580BB71E7CD65F00B5351B /* demo.mov in Resources */ = {isa = PBXBuildFile; fileRef = C4580BB61E7CD65F00B5351B /* demo.mov */; };
+		C4580BB91E7CD66700B5351B /* DemoAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4580BB81E7CD66700B5351B /* DemoAVPlayer.swift */; };
 		C45F5EFE1E7B858B006283A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5EFD1E7B858B006283A7 /* AppDelegate.swift */; };
 		C45F5F001E7B858B006283A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F5EFF1E7B858B006283A7 /* ViewController.swift */; };
 		C45F5F031E7B858B006283A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45F5F011E7B858B006283A7 /* Main.storyboard */; };
@@ -134,6 +136,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4580BB61E7CD65F00B5351B /* demo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = demo.mov; sourceTree = "<group>"; };
+		C4580BB81E7CD66700B5351B /* DemoAVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAVPlayer.swift; sourceTree = "<group>"; };
 		C45F5EFA1E7B858B006283A7 /* SwiftDemoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45F5EFD1E7B858B006283A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45F5EFF1E7B858B006283A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +278,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4580BB51E7CD65F00B5351B /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				C4580BB61E7CD65F00B5351B /* demo.mov */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		C45F5EF11E7B858B006283A7 = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +309,7 @@
 		C45F5EFC1E7B858B006283A7 /* SwiftDemoExample */ = {
 			isa = PBXGroup;
 			children = (
+				C4580BB51E7CD65F00B5351B /* Videos */,
 				C45F5F471E7B8AF9006283A7 /* Images */,
 				C45F5F2B1E7B85CF006283A7 /* Example */,
 				C45F5EFD1E7B858B006283A7 /* AppDelegate.swift */,
@@ -334,6 +347,7 @@
 				C45F5F2D1E7B85CF006283A7 /* DemoReflectionView.swift */,
 				C45F5F2E1E7B85CF006283A7 /* DemoReplicatorLayer.swift */,
 				C45F5F2F1E7B85CF006283A7 /* DemoScrollView.swift */,
+				C4580BB81E7CD66700B5351B /* DemoAVPlayer.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -569,6 +583,7 @@
 				C45F5FC01E7B8AF9006283A7 /* demo_03_00.jpg in Resources */,
 				C45F5FF21E7B8AF9006283A7 /* demo_09_02.jpg in Resources */,
 				C45F5FAA1E7B8AF9006283A7 /* demo_00_02.jpg in Resources */,
+				C4580BB71E7CD65F00B5351B /* demo.mov in Resources */,
 				C45F5FF11E7B8AF9006283A7 /* demo_09_01.jpg in Resources */,
 				C45F5FFC1E7B8AF9006283A7 /* demo_10_04.jpg in Resources */,
 				C45F5FC91E7B8AF9006283A7 /* demo_04_01.jpg in Resources */,
@@ -672,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45F5F321E7B85CF006283A7 /* DemoReplicatorLayer.swift in Sources */,
+				C4580BB91E7CD66700B5351B /* DemoAVPlayer.swift in Sources */,
 				C45F5F001E7B858B006283A7 /* ViewController.swift in Sources */,
 				C45F5F331E7B85CF006283A7 /* DemoScrollView.swift in Sources */,
 				C45F5F301E7B85CF006283A7 /* DemoGradientLayer.swift in Sources */,
@@ -921,6 +937,7 @@
 				C45F5F241E7B858C006283A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C45F5F251E7B858C006283A7 /* Build configuration list for PBXNativeTarget "SwiftDemoExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -929,6 +946,7 @@
 				C45F5F271E7B858C006283A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C45F5F281E7B858C006283A7 /* Build configuration list for PBXNativeTarget "SwiftDemoExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -937,6 +955,7 @@
 				C45F5F2A1E7B858C006283A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

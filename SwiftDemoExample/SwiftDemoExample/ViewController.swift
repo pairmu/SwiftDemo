@@ -16,20 +16,27 @@ class ViewController: UIViewController, CALayerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // scrollView
-        scrollView.frame = self.view.bounds
-        scrollView.backgroundColor = UIColor.red
-        self.view.addSubview(scrollView)
-        
-        // DemoCATiledLayer
-        let tileLayer = CATiledLayer()
-        tileLayer.frame = CGRect(x: 0, y: 0, width: 2048, height: 2048)
-        tileLayer.contentsScale = scale
-        tileLayer.delegate = self
-        
-        scrollView.layer.addSublayer(tileLayer)
-        scrollView.contentSize = tileLayer.frame.size
-        tileLayer.setNeedsDisplay()
+        #if true
+            // palyer
+            let string = Bundle.main.path(forResource: "demo", ofType: "mov")
+            DemoAVPlayer.play(path: string!, superLayer: self.view.layer)
+            
+        #else
+            // scrollView
+            scrollView.frame = self.view.bounds
+            scrollView.backgroundColor = UIColor.red
+            self.view.addSubview(scrollView)
+            
+            // DemoCATiledLayer
+            let tileLayer = CATiledLayer()
+            tileLayer.frame = CGRect(x: 0, y: 0, width: 2048, height: 2048)
+            tileLayer.contentsScale = scale
+            tileLayer.delegate = self
+            
+            scrollView.layer.addSublayer(tileLayer)
+            scrollView.contentSize = tileLayer.frame.size
+            tileLayer.setNeedsDisplay()
+        #endif
     }
     
     func draw(_ layer: CALayer, in ctx: CGContext) {
