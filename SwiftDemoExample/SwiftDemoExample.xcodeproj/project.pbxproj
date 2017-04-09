@@ -116,6 +116,7 @@
 		C45F60051E7B8AF9006283A7 /* demo_11_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45F5FA51E7B8AF9006283A7 /* demo_11_05.jpg */; };
 		C45F60061E7B8AF9006283A7 /* demo_11_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45F5FA61E7B8AF9006283A7 /* demo_11_06.jpg */; };
 		C45F60071E7B8AF9006283A7 /* demo_11_07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45F5FA71E7B8AF9006283A7 /* demo_11_07.jpg */; };
+		C490CE6A1E98E25A0098D432 /* DemoCAAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C490CE691E98E25A0098D432 /* DemoCAAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,6 +252,7 @@
 		C45F5FA51E7B8AF9006283A7 /* demo_11_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo_11_05.jpg; sourceTree = "<group>"; };
 		C45F5FA61E7B8AF9006283A7 /* demo_11_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo_11_06.jpg; sourceTree = "<group>"; };
 		C45F5FA71E7B8AF9006283A7 /* demo_11_07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo_11_07.jpg; sourceTree = "<group>"; };
+		C490CE691E98E25A0098D432 /* DemoCAAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCAAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +350,7 @@
 				C45F5F2E1E7B85CF006283A7 /* DemoReplicatorLayer.swift */,
 				C45F5F2F1E7B85CF006283A7 /* DemoScrollView.swift */,
 				C4580BB81E7CD66700B5351B /* DemoAVPlayer.swift */,
+				C490CE691E98E25A0098D432 /* DemoCAAnimation.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -687,6 +690,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45F5F321E7B85CF006283A7 /* DemoReplicatorLayer.swift in Sources */,
+				C490CE6A1E98E25A0098D432 /* DemoCAAnimation.swift in Sources */,
 				C4580BB91E7CD66700B5351B /* DemoAVPlayer.swift in Sources */,
 				C45F5F001E7B858B006283A7 /* ViewController.swift in Sources */,
 				C45F5F331E7B85CF006283A7 /* DemoScrollView.swift in Sources */,
