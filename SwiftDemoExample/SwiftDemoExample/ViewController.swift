@@ -46,7 +46,7 @@ class ViewController: UIViewController, CALayerDelegate, CAAnimationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         #if true
-
+            
         #else
             self.demoLayer.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
             self.demoLayer.position = self.view.center
@@ -169,8 +169,9 @@ class ViewController: UIViewController, CALayerDelegate, CAAnimationDelegate {
     #else
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
+//        DemoCAAnimation.showAnimationForView(view: self.view)
         
-        DemoCAAnimation.showAnimationForView(view: self.customView)
+        DemoCATransition.showCATransition(view: self.view)
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {

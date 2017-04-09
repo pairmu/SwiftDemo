@@ -117,6 +117,8 @@
 		C45F60061E7B8AF9006283A7 /* demo_11_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45F5FA61E7B8AF9006283A7 /* demo_11_06.jpg */; };
 		C45F60071E7B8AF9006283A7 /* demo_11_07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C45F5FA71E7B8AF9006283A7 /* demo_11_07.jpg */; };
 		C490CE6A1E98E25A0098D432 /* DemoCAAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C490CE691E98E25A0098D432 /* DemoCAAnimation.swift */; };
+		C4DEB2A21E9A123D00546B54 /* demo1.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DEB2A11E9A123D00546B54 /* demo1.png */; };
+		C4DEB2A41E9A155E00546B54 /* DemoCATransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DEB2A31E9A155E00546B54 /* DemoCATransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,6 +255,8 @@
 		C45F5FA61E7B8AF9006283A7 /* demo_11_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo_11_06.jpg; sourceTree = "<group>"; };
 		C45F5FA71E7B8AF9006283A7 /* demo_11_07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo_11_07.jpg; sourceTree = "<group>"; };
 		C490CE691E98E25A0098D432 /* DemoCAAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCAAnimation.swift; sourceTree = "<group>"; };
+		C4DEB2A11E9A123D00546B54 /* demo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo1.png; sourceTree = "<group>"; };
+		C4DEB2A31E9A155E00546B54 /* DemoCATransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCATransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,12 +349,14 @@
 		C45F5F2B1E7B85CF006283A7 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				C4DEB2A11E9A123D00546B54 /* demo1.png */,
 				C45F5F2C1E7B85CF006283A7 /* DemoGradientLayer.swift */,
 				C45F5F2D1E7B85CF006283A7 /* DemoReflectionView.swift */,
 				C45F5F2E1E7B85CF006283A7 /* DemoReplicatorLayer.swift */,
 				C45F5F2F1E7B85CF006283A7 /* DemoScrollView.swift */,
 				C4580BB81E7CD66700B5351B /* DemoAVPlayer.swift */,
 				C490CE691E98E25A0098D432 /* DemoCAAnimation.swift */,
+				C4DEB2A31E9A155E00546B54 /* DemoCATransition.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -615,6 +621,7 @@
 				C45F5FBE1E7B8AF9006283A7 /* demo_02_06.jpg in Resources */,
 				C45F5FE71E7B8AF9006283A7 /* demo_07_07.jpg in Resources */,
 				C45F5FDB1E7B8AF9006283A7 /* demo_06_03.jpg in Resources */,
+				C4DEB2A21E9A123D00546B54 /* demo1.png in Resources */,
 				C45F5FCB1E7B8AF9006283A7 /* demo_04_03.jpg in Resources */,
 				C45F5FA91E7B8AF9006283A7 /* demo_00_01.jpg in Resources */,
 				C45F5FAF1E7B8AF9006283A7 /* demo_00_07.jpg in Resources */,
@@ -693,6 +700,7 @@
 				C490CE6A1E98E25A0098D432 /* DemoCAAnimation.swift in Sources */,
 				C4580BB91E7CD66700B5351B /* DemoAVPlayer.swift in Sources */,
 				C45F5F001E7B858B006283A7 /* ViewController.swift in Sources */,
+				C4DEB2A41E9A155E00546B54 /* DemoCATransition.swift in Sources */,
 				C45F5F331E7B85CF006283A7 /* DemoScrollView.swift in Sources */,
 				C45F5F301E7B85CF006283A7 /* DemoGradientLayer.swift in Sources */,
 				C45F5F311E7B85CF006283A7 /* DemoReflectionView.swift in Sources */,
