@@ -152,13 +152,7 @@ class ViewController: UIViewController, CALayerDelegate, CAAnimationDelegate {
         }
         
         self.change = !self.change
-    }
-    #else
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        
-        DemoCAAnimation.showAnimationForView(view: self.view)
-        
+    
         let red = CGFloat(arc4random()) / CGFloat(UInt32.max)
         let green = CGFloat(arc4random()) / CGFloat(UInt32.max)
         let blue = CGFloat(arc4random()) / CGFloat(UInt32.max)
@@ -171,16 +165,22 @@ class ViewController: UIViewController, CALayerDelegate, CAAnimationDelegate {
         animation.fromValue = (self.customLayer.presentation() ?? self.customLayer).value(forKeyPath: "backgroundColor")
         animation.toValue = color.cgColor
         self.customLayer.add(animation, forKey: nil)
+    }
+    #else
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        DemoCAAnimation.showAnimationForView(view: self.customView)
+    }
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        print("animation Stop")
+        let animation = anim as! CABasicAnimation
         
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         self.customLayer.setValue(animation.toValue, forKeyPath: "backgroundColor")
         CATransaction.commit()
-        
-    }
-    
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        print("animation Stop")
     }
     
     #endif
